@@ -9,7 +9,7 @@ osu!purger is a small tool written in rust that looks through and deletes all fi
 - [Goals](https://github.com/jettosu/osu-purger#goals)
 
 ## Installation
-To install the tool simply download the newest release, extract the zip-file and open "osu_cleaner.exe".
+To install the tool simply download the newest release, extract the zip-file and open "osu_purger.exe".
  
 ## Usage
 **I have implemented a total of 0 safety measures into this program, ensure that the file-path you enter is correct!! Otherwise you will potentially wipe every single file with the aforementioned extensions on your entire drive.**
