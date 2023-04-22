@@ -16,8 +16,13 @@ Once the program has opened, simply copy paste the path to your osu! song folder
 
 ## Goals
 - Properly setup project structure
+ - Refactored most of the code into the library module, will look into organizing it further / more properly
 - Implement security measures
+ - Added requirement for additional confirmation from the user before starting deletion
+ - Look into having the program automatically identify the songs folder (if possible)
 - Potentially add GUI
+ - Just a consideration, will look into it once the other issues have been addressed as I believe those are higher priority
 - Refactor code
+ - Have to rewrite it a bunch, will likely happen when I've organized the project files properly
 
 This is  the first thing I've written so I'm intentionally being rather vague with the goals as I honestly have no clue what those goals would involve.
