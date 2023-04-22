@@ -16,7 +16,7 @@ Once the program has opened, simply copy paste the path to your osu! song folder
 
 ## Goals
 - Properly setup project structure
-    - Refactored most of the code into the library module, will look into organizing it further / more properly
+    - Moved code out of main.rs into individual modules, will try to figure out how to use the lib.rs module to further remove module declarations in main.rs
 - Implement security measures
     - Added requirement for additional confirmation from the user before starting deletion
     - Look into having the program automatically identify the songs folder (if possible)
