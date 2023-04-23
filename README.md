@@ -29,5 +29,8 @@ Once the program has opened, simply copy paste the path to your osu! song folder
 - Refactor code
     - Decrease amount of times we iterate through the files vector, potentially by combining the indexing and filter funtion.
     - Make the code generally more readable and look into alternatives to the methods used in current.
+- Fix program occasionally deleting the song file due to inconsistent filetype standards
+    - Potentially check file size and base it off that?
+    - Add filter to not delete standard file names for songs.
 
 This is  the first thing I've written so I'm intentionally being rather vague with the goals as I honestly have no clue what those goals would involve.
