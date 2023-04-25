@@ -22,16 +22,16 @@ Once the program has opened, simply copy paste the path to your osu! song folder
     - Move code out of main into submodules ✓
     - Move code into the lib.rs module and out of main.rs, figure out how to do module-calls outside of main.
 - Implement security measures
-    - Added requirement for additional confirmation from the user before starting deletion
+    - Added requirement for additional confirmation from the user before starting deletion ✓
     - Have the program automatically identify the songs folder (if possible, else have it look for the default directory location and otherwise depend on user input).
 - Potentially add GUI
     - Will be thought about further once other higher priority problems have been adressed. 
     - Look into [egui](https://github.com/emilk/egui).
 - Refactor code
-    - Decrease amount of times we iterate through the files vector, potentially by combining the indexing and filter funtion.
+    - Decrease amount of times we iterate through the files vector, potentially by combining the indexing and filter funtion ✓
     - Make the code generally more readable and look into alternatives to the methods used in current.
 - Fix program occasionally deleting the song file due to inconsistent filetype standards
     - Potentially check file size and base it off that?
-    - Add filter to not delete standard file names for songs.
+    - Add filter to not delete standard file names for songs ✓
 
 This is  the first thing I've written so I'm intentionally being rather vague with the goals as I honestly have no clue what those goals would involve.
