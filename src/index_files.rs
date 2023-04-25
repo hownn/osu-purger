@@ -3,7 +3,7 @@ use std::{io, path::PathBuf};
 
 pub fn index_files(path: String) -> (Vec<PathBuf>, usize) {
     let mut indexed_files = Vec::new();
-    let wanted_extensions = vec!["wav", "mp4", "jpg", "png", "mkv", "jpeg", "flv", "ogg", "wmv", "mov", "m4v", "WAV", "MP4", "JPG", "PNG", "MKV", "JPEG", "FLV", "OGG", "WMV", "MOV", "M4V:"];
+    let wanted_extensions = vec!["wav", "osb", "mp4", "jpg", "png", "mkv", "jpeg", "flv", "ogg", "wmv", "mov", "m4v", "WAV", "MP4", "JPG", "PNG", "MKV", "JPEG", "FLV", "OGG", "WMV", "MOV", "M4V:"];
 
     for entry in WalkDir::new(path.trim()).into_iter().filter_map(|e| e.ok()) {
         let extension = entry.path().extension();
@@ -14,7 +14,7 @@ pub fn index_files(path: String) -> (Vec<PathBuf>, usize) {
     let amount_of_files = indexed_files.len();
 
     // asks the user for confirmation they want to delete the files
-    println!("\nFound directory {} with {} files, do you want to continue?\ny/n", path.trim(), amount_of_files);
+    println!("\nFound directory {} with {} matching files, do you want to continue?\ny/n", path.trim(), amount_of_files);
     let mut response = String::new();
     io::stdin()
         .read_line(&mut response)
