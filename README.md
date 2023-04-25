@@ -19,6 +19,7 @@ Once the program has opened, simply copy paste the path to your osu! song folder
     - Split into images, videoes and audio-files.
     - Potentially do so by defining the filetypes as different vectors and then pushing the wanted filetypes into a single one.
 - Properly setup project structure
+    - Move code out of main into submodules ✓
     - Move code into the lib.rs module and out of main.rs, figure out how to do module-calls outside of main.
 - Implement security measures
     - Added requirement for additional confirmation from the user before starting deletion
