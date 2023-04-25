@@ -1,7 +1,7 @@
 # USING THIS IS A BAD IDEA IF YOU DON'T KNOW WHAT YOU'RE DOING DUE TO LACK OF SECURITY FEATURES!!!
 ------------
 ## osu!purger
-osu!purger is a small tool written in rust that looks through and deletes all files in  your osu! songs directory that are unnecessary for the game to function, as of now these files are: wav, mp4, jpg, png, mkv, flv, jpeg, ogg, avi, wmv, mpg, mov, m4v, mpeg, 3gp, webm, webp, bmp, heif, svg and acc.
+osu!purger is a small tool written in rust that looks through and deletes all files in  your osu! songs directory that are unnecessary for the game to function, as of now these files are: wav, mp4, jpg, png, mkv, jpeg, flv, ogg, wmv, mov and m4v.
 
 ## Table of Contents
 - [Installation](https://github.com/jettosu/osu-purger#installation)
