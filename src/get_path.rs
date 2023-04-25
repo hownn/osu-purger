@@ -9,7 +9,7 @@ pub fn get_path() -> String {
         .read_line(&mut path)
         .expect("Invalid path.");
     // checks if path containts osu!\Songs as that's the standard directory
-    if path.as_str().contains("osu!\\Songs") == false {
+    if !path.as_str().contains("osu!\\Songs") {
         println!("\n'{}' doesn't contain 'osu!\\Songs\', are you sure this is the correct path?\ny/n", path.trim());
         let mut response = String::new();
         io::stdin()

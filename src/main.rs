@@ -1,6 +1,5 @@
 mod get_path;
 mod index_files;
-mod filter_files;
 mod delete_files;
 
 fn main() {
@@ -9,10 +8,7 @@ fn main() {
 
     // files at the given path are indexed into a vector
     let indexed_files = index_files::index_files(path);
-
-    // forwards the vector of files to a filter that sorts them based on extension
-    let filtered_files = filter_files::filter_files(indexed_files);
     
     // deletes the filtered files
-    delete_files::delete_files(filtered_files);
+    delete_files::delete_files(indexed_files);
 }
