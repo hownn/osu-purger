@@ -16,7 +16,7 @@ pub fn delete_files(index: (Vec<PathBuf>, usize)) {
     println!("\n{} files deleted totaling {}mb in {} seconds", index.1, total_file_size/1000000, elapsed_time.as_secs());
     
     // idk how to make the program not just immediately close itself
-    println!("\nPress Enter to exit.");
+    println!("\nPress a key to exit.");
     let mut wait = String::new();
     io::stdin()
         .read_line(&mut wait)
