@@ -34,6 +34,6 @@ Once the program has opened, simply copy paste the path to your osu! song folder
 - Fix program occasionally deleting the song file due to inconsistent filetype standards
     - Potentially check file size and base it off that?
     - Add filter to not delete standard file names for songs ✓
-- Make extension matching not case sensitive
+- Make extension matching not case sensitive ✓
 
 This is  the first thing I've written so I'm intentionally being rather vague with the goals as I honestly have no clue what those goals would involve.
