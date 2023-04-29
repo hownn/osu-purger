@@ -7,7 +7,7 @@ pub fn delete_files(index: (Vec<PathBuf>, usize)) {
     // iterates through filtered files, adds size to total, then deletes them
     for file in index.0.iter() {
         total_file_size += file_real_size(file).unwrap();
-        if !file.as_path().to_str().unwrap().contains(&"song") {
+        if !file.as_path().to_str().unwrap().contains("song") {
             fs::remove_file(file).unwrap();
         }
     }
