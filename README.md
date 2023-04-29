@@ -35,7 +35,7 @@ Once the program has opened, simply copy paste the path to your osu! song folder
     - Potentially check file size and base it off that?
     - Add filter to not delete standard file names for songs ✓
 - Make extension matching not case sensitive ✓
-- Insert the user inputs into loops and 'continue' on invalid inputs
-    - Currently panics on any input other than "yes" or "no" in most cases, which is kinda stupid
+- Insert the user inputs into loops and 'continue' on invalid inputs ✓
+    - Currently panics on any input other than "yes" or "no" in most cases, which is kinda stupid ✓
 
 This is  the first thing I've written so I'm intentionally being rather vague with the goals as I honestly have no clue what those goals would involve.
