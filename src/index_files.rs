@@ -22,15 +22,18 @@ pub fn index_files(path: String) -> (Vec<PathBuf>, usize) {
 
     // asks the user for confirmation they want to delete the files
     println!("\nFound directory {} with {} matching files in {} seconds, do you want to continue?\ny/n", path.trim(), amount_of_files, elapsed_time.as_secs());
-    let mut response = String::new();
-    io::stdin()
-        .read_line(&mut response)
-        .expect("Invalid response");
+    loop {
+        let mut response = String::new();
+        io::stdin()
+            .read_line(&mut response)
+            .expect("Invalid response");
 
-    // panics if user indicates they don't want to delete the files
-    match response.as_str().trim() {
-        "y" => (indexed_files, amount_of_files),
-        "n" => panic!("Cancelled deletion"),
-        _ => panic!("Invalid input"),
+        // panics if user indicates they don't want to delete the files
+        match response.as_str().trim() {
+            "y" => break,
+            "n" => panic!("Cancelled deletion"),
+            _ => continue,
+        }
     }
+    (indexed_files, amount_of_files)
 }

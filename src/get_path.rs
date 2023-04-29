@@ -11,18 +11,19 @@ pub fn get_path() -> String {
     // checks if path containts osu!\Songs as that's the standard directory
     if !path.as_str().contains("osu!\\Songs") {
         println!("\n'{}' doesn't contain 'osu!\\Songs\', are you sure this is the correct path?\ny/n", path.trim());
-        let mut response = String::new();
-        io::stdin()
-            .read_line(&mut response)
-            .expect("Invalid response");
+        loop {
+            let mut response = String::new();
+            io::stdin()
+                .read_line(&mut response)
+                .expect("Invalid response");
 
-        // panics if user indicates it's the wrong path or does an invalid input
-        match response.as_str().trim() {
-            "y" => path,
-            "n" => panic!("Wrong path"),
-            _ => panic!("Invalid input"),
+            // panics if user indicates it's the wrong path or does an invalid input
+            match response.as_str().trim() {
+                "y" => break,
+                "n" => panic!("Wrong path"),
+                _ => continue,   
+            }
         }
-    } else {
-        path
     }
+    path
 }
