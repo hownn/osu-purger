@@ -2,6 +2,7 @@ use walkdir::{WalkDir};
 use std::{io, path::PathBuf};
 
 pub fn index_files(path: String) -> (Vec<PathBuf>, usize) {
+    // defines the file extensions associated with each filetype
     let audio_extensions = vec!["wav", "mkv", "ogg"];
     let video_extensions = vec!["osb", "mp4", "mkv", "flv", "wmv", "mov", "m4v"];
     let image_extensions = vec!["jpg", "png", "jpeg"];
