@@ -16,20 +16,21 @@ Once the program has opened, simply copy paste the path to your osu! song folder
 
 ## To-do
 - Allow user to select which filetypes they want removed from directory
-    - Split into images, videoes and audio-files.
-    - Potentially do so by defining the filetypes as different vectors and then pushing the wanted filetypes into a single one.
+    - Split into images, videoes and audio-files ✓
+    - Potentially do so by defining the filetypes as different vectors and then pushing the wanted filetypes into a single one ✓
+    - Find way to allow the user to select which file types they want to remove
 - Properly setup project structure
     - Move code out of main into submodules ✓
-    - Move code into the lib.rs module and out of main.rs, figure out how to do module-calls outside of main.
+    - Move code into the lib.rs module and out of main.rs, figure out how to do module-calls outside of main
 - Implement security measures
     - Added requirement for additional confirmation from the user before starting deletion ✓
-    - Have the program automatically identify the songs folder (if possible, else have it look for the default directory location and otherwise depend on user input).
+    - Have the program automatically identify the songs folder (if possible, else have it look for the default directory location and otherwise depend on user input)
 - Potentially add GUI
-    - Will be thought about further once other higher priority problems have been adressed. 
-    - Look into [egui](https://github.com/emilk/egui).
+    - Will be thought about further once other higher priority problems have been adressed
+    - Look into [egui](https://github.com/emilk/egui)
 - Refactor code
     - Decrease amount of times we iterate through the files vector, potentially by combining the indexing and filter funtion ✓
-    - Make the code generally more readable and look into alternatives to the methods used in current.
+    - Make the code generally more readable and look into alternatives to the methods used in current
 - Fix program occasionally deleting the song file due to inconsistent filetype standards
     - Potentially check file size and base it off that?
     - Add filter to not delete standard file names for songs ✓
