@@ -4,6 +4,7 @@ osu!purger is a small tool written in rust that looks through and deletes all fi
 # Table of Contents
 - [Installation](https://github.com/jettosu/osu-purger#installation)
 - [Usage](https://github.com/jettosu/osu-purger#usage)
+    - [Example](https://github.com/jettosu/osu-purger#example)
 - [To-do](https://github.com/jettosu/osu-purger#to-do)
 
 ## Installation
