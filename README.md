@@ -12,6 +12,9 @@ To install the tool simply download the newest release, extract the zip-file and
 ## Usage
 Once the program has opened, simply copy paste the path to your osu! song folder into the command line (in my case that is: D:\Games\osu!\Songs) and then press enter. The program will then go through the directory and remove all files deemed unimportant before outputting the total amount of files deleted together with their combined file size. Press enter once again to close the program after this message has displayed.
 
+### Example
+[![example.png](https://i.postimg.cc/bJqTNJSX/example.png)](https://postimg.cc/sB0ST3JK)
+
 ## To-do
 - Allow user to select which filetypes they want removed from directory
     - Split into images, videoes and audio-files ✓
