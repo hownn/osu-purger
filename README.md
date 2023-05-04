@@ -10,7 +10,7 @@ osu!purger is a small tool written in rust that looks through and deletes all fi
 To install the tool simply download the newest release, extract the zip-file and open "osu_purger.exe".
  
 ## Usage
-Once the program has opened, simply copy paste the path to your osu! song folder into the command line (in my case that is: D:\Games\osu!\Songs) and then press enter. The program will then go through the directory and remove all files deemed unimportant before outputting the total amount of files deleted together with their combined file size. Press enter once again to close the program after this message has displayed.
+Once the program has opened, simply copy paste the path to your osu! song folder into the command line (in my case that is: %LOCALAPPDATA%\osu!\Songs) and then press enter. The program will then go through the directory and remove all files deemed unimportant before outputting the total amount of files deleted together with their combined file size. Press enter once again to close the program after this message has displayed.
 
 ### Example
 ![Alt text](https://i.imgur.com/jDd5Hcf.png)
