@@ -15,6 +15,7 @@ Once the program has opened, simply copy paste the path to your osu! song folder
 
 ### Example
 ![Alt text](https://i.imgur.com/jDd5Hcf.png)
+In this example my osu! songs folders size was reduced by ≈ 34% (125gb start size, 42gb reduction 42/125\*100=33.6), a rather drastic reduction, especially for larger song libraries.
 
 ## To-do
 - Allow user to select which filetypes they want removed from directory
