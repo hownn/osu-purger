@@ -1,5 +1,5 @@
-use std::{path::PathBuf, time::Instant, fs, io};
 use filesize::file_real_size;
+use std::{fs, io, path::PathBuf, time::Instant};
 
 pub fn delete_files(index: (Vec<PathBuf>, usize)) {
     let mut total_file_size = 0;
@@ -13,12 +13,15 @@ pub fn delete_files(index: (Vec<PathBuf>, usize)) {
         }
     }
     let elapsed_time = now.elapsed();
-    println!("\n{} files deleted totaling {}mb in {} seconds", index.1, total_file_size/1000000, elapsed_time.as_secs());
-    
+    println!(
+        "\n{} files deleted totaling {}mb in {} seconds",
+        index.1,
+        total_file_size / 1000000,
+        elapsed_time.as_secs()
+    );
+
     // idk how to make the program not just immediately close itself
     println!("\nPress a key to exit.");
     let mut wait = String::new();
-    io::stdin()
-        .read_line(&mut wait)
-        .expect("Invalid input.");
+    io::stdin().read_line(&mut wait).expect("Invalid input.");
 }
