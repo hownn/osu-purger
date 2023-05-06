@@ -40,5 +40,6 @@ In this example my osu! songs folders size was reduced by ≈ 34% (125gb start s
 - Make extension matching not case sensitive ✓
 - Insert the user inputs into loops and 'continue' on invalid inputs ✓
     - Currently panics on any input other than "yes" or "no" in most cases, which is kinda stupid ✓
+- Add option to create 1x1 black png in directories to prevent the warning message
 
 This is  the first thing I've written so I'm intentionally being rather vague with the goals as I honestly have no clue what those goals would involve.
