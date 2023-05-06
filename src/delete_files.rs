@@ -20,7 +20,7 @@ pub fn delete_files(index: (Vec<PathBuf>, usize)) {
         elapsed_time.as_secs()
     );
 
-    // idk how to make the program not just immediately close itself
+    // make program wait instead of instantly closing
     println!("\nPress a key to exit.");
     let mut wait = String::new();
     io::stdin().read_line(&mut wait).expect("Invalid input.");
